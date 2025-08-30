@@ -46,7 +46,6 @@ FetchContent_Declare(
         zstd
         URL ${VELOX_ZSTD_SOURCE_URL}
         URL_HASH ${VELOX_ZSTD_BUILD_SHA256_CHECKSUM}
-        SOURCE_SUBDIR build/cmake
         OVERRIDE_FIND_PACKAGE EXCLUDE_FROM_ALL SYSTEM)
 
 FetchContent_MakeAvailable(zstd)
